@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+:root {
+    --color-dark : rgba(14, 14 , 14);
+    --color-dark2: rgba(32, 32, 32);
+    --color-dark3: rgba(22, 22 ,22);
+    --color-white: #fff;
+    --color--green: rgba(103, 195, 80);
+    --color-green2: rgba(51,149,26);
+    --color-red: rgba(184,40,35);
+    --color-red2: rgba(146,22,17);
+}
+body {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 50px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.content-add-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; /*<--ajuda na questao da responsividade*/
+}
+#input-new-task,
+#btn-new-task {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+#input-new-task {
+    width: 20rem;
+    border-radius: 1rem;
+}
+#btn-new-task{
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+#btn-new-task:hover{
+    background-color: var(--color-dark3);
+}
+#to-do-list  {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+}
+#to-do-list li {
+    list-style: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#btn-ok{
+    border: none;
+    background-color: var(--color--green);
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+#btn-ok:hover{
+    background-color: var(--color-green2);
+}
+#to-do-list li:hover{
+    background-color: var(--color-dark3);
+    padding-left: 1rem;
+    border-radius: 1rem;
+    transition: .4s;
+}
